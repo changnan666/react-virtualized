@@ -5,11 +5,7 @@ import * as React from 'react';
 import styles from './List.example.css';
 import AutoSizer from '../AutoSizer';
 import List from './List';
-import {
-  ContentBox,
-  ContentBoxHeader,
-  ContentBoxParagraph,
-} from '../demo/ContentBox';
+import {ContentBox, ContentBoxParagraph} from '../demo/ContentBox';
 import {LabeledInput, InputRow} from '../demo/LabeledInput';
 
 export default class ListExample extends React.PureComponent {
@@ -50,18 +46,6 @@ export default class ListExample extends React.PureComponent {
 
     return (
       <ContentBox>
-        <ContentBoxHeader
-          text="List"
-          sourceLink="https://github.com/bvaughn/react-virtualized/blob/master/source/List/List.example.js"
-          docsLink="https://github.com/bvaughn/react-virtualized/blob/master/docs/List.md"
-        />
-
-        <ContentBoxParagraph>
-          The list below is windowed (or "virtualized") meaning that only the
-          visible rows are rendered. Adjust its configurable properties below to
-          see how it reacts.
-        </ContentBoxParagraph>
-
         <ContentBoxParagraph>
           <label className={styles.checkboxLabel}>
             <input
